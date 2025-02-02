@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f9e3e3;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            width: 90%;
+            max-width: 1200px;
+            padding: 40px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #d32f2f;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            margin: 30px 0;
+        }
+
+        .yes-button, .no-button {
+            font-size: 2em;
+            padding: 15px 40px;
+            margin: 0 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .yes-button {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        .yes-button:hover {
+            background-color: #45a049;
+        }
+
+        .no-button {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .no-button:hover {
+            background-color: #e53935;
+        }
+
+        .gif_container {
+            margin-top: 30px;
+        }
+
+        .gif_container img {
+            width: 100%;
+            max-height: 60vh;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Will you be my Valentine pookie?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+        </div>
+        <div class="gif_container">
+            <img src="/api/placeholder/800/600" alt="Cute Valentine Image">
+        </div>
+    </div>
+
+</body>
+</html>
